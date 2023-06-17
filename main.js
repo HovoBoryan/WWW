@@ -1,27 +1,37 @@
 let button = document.getElementById("finish");
+button.addEventListener("click", fun);
 
-button.addEventListener("click", Test);
-function Test() {
+function fun() {
     let result = 0;
-    let a1 = document.getElementById("q1").value;
-    if(a1 ==="30") {
+
+    let answ1 = document.getElementById("Q1").value;
+    if(answ1 === "23") {
         result++;
     }
-    let a2 = document.getElementById("q2").value;
-    if(a2 ==="2") {
+    let answ2 = document.getElementById("Q2").value;
+    if(answ2 === "32") {
         result++;
     }
-    let a3 = document.getElementById("q3").value;
-    if(a3 ==="200") {
+    let answ3 = document.getElementById("Q3").value;
+    if(answ3 === "625") {
         result++;
     }
-    let a4 = document.getElementById("q4").value;
-    if(a4 ==="10") {
+    let answ4 = document.getElementById("Q4").value;
+    if(answ4 === "10000") {
         result++;
     }
-    let a5 = document.getElementById("q5").value;
-    if(a5 ==="120") {
+    let answ5 = document.getElementById("Q5").value;
+    if(answ5 === "1000") {
         result++;
     }
-    alert(result);
+    let answ6 = document.getElementById("Q6").value;
+    if(answ6 === "80") {
+        result++;
+    }
+    if(result === 6) {
+        alert("Excelent you have " + result + " correct answers:")
+    } else {
+        alert("your correct answers are " + result)
+    }
+   
 }
